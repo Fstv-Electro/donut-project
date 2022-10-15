@@ -23,6 +23,30 @@ address {
     font-style: normal;
 }
 
-// .icon {
-//     fill: currentColor;
-// }
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.22;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-text-color);
+}
