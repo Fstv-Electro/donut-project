@@ -1,7 +1,7 @@
 .page-header{
     margin-top: 16px;
 }
-.container--centering-ph{
+.donat-nav{
     display: flex;
     justify-content: space-between;
 }
@@ -20,6 +20,10 @@
 }
 .open-mobile-menu{
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     width: 40px;
     height: 25px;
     border: none;
