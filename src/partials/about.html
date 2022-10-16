@@ -1,7 +1,7 @@
 <section class="about">
   <div class="container">
-    <picture class="about__img">
-      <source
+    <picture class="about__picture">
+      <!-- <source
         srcset="
           ./images/about-desk.jpg    1x,
           ./images/about-desk@2x.jpg 2x,
@@ -24,25 +24,33 @@
           ./images/about-mob@3x.jpg 3x
         "
         media="(min-width: 480px)"
+      /> -->
+      <img
+        class="about__img"
+        src="./images/about-mob.jpg"
+        alt="donuts and hand"
       />
     </picture>
     <div class="about__info">
       <h2 class="about__title">About us</h2>
       <p class="about__description">
         Oh My Donut is the shop which adores tasty deserts and spend hours to
-        create sophisticated donuts which will save the world! <br />
-        <br />
+        create sophisticated donuts which will save the world!
+      </p>
+      <p class="about__description">
         Eva has been baking since she was six years old and over the last 49
         years, she has created hundreds of cakes for weddings and has baked for
         many celebrities. Eva and our shop have received multiple awards &
         recognition for excellence.
       </p>
-      <p class="about__description">
+      <p class="about__description" id="read-more">
         We are going to teach you how to cook with passion and sparkles in your
         eyes! We love what we do and believe you will enjoy our cooking
         atmosphere!
       </p>
-      <button class="about__btn">Read more</button>
     </div>
+    <button onclick="readMoreFunc()" class="about__btn" id="myBtn">
+      Read more
+    </button>
   </div>
 </section>
