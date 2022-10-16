@@ -16,6 +16,11 @@
     box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
     border-radius: 10px;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .bgi-container {
+        background-image: linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-mobJPG@2x.jpg);
+    }
+}
 
 .bgi-container_image {
     display: none;
