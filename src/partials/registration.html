@@ -1,13 +1,33 @@
-
-<footer class="page-footer">
+<section class="section">
     <div class="container">
-        <ul class="page-footer__list">
-            <li><a href="https://goo.gl/maps/es5fF5DkBJhGJGc97" target="_blank" rel="noreferer noopener nofollow">New York</a></li>
-            <li><a href="tel:9102228855">(910)222-8855</a></li>
-        </ul>
-        <picture>
-            <source srcset="./images/пончикиPNG.png 1x, ./images/пончикиPNG@2x.png 2x, ./images/пончикиPNG@3x.png 3x">
-            <img src="./images/пончикиPNG.png" alt="donut">
-        </picture>
+        <h2>Registration</h2>
+        <div class="bgi-container">
+            <article>
+                <div>
+                    <picture>
+                        <source
+                            srcset="./images/registration1-deskJPG.jpg 1x, ./images/registration1-deskJPG@2x.jpg 2x, ./images/registration1-deskJPG@3x.jpg 3x"
+                            media="(min-wirth: 1200px)">
+                        <source
+                            srcset="./images/registration1-tabJPG.jpg 1x, ./images/registration1-tabJPG@2x.jpg 2x, ./images/registration1-tabJPG@3x.jpg 3x"
+                            media="(min-wirth: 768px)">
+                        <img src="./images/registration1-tabJPG.jpg" alt="donuts">
+                    </picture>
+                </div>
+            </article>
+            <p>May 23, 11:00
+                New York</p>
+            <form class="registration">
+                <p class="registration__post">Apply your personal info
+                    for registration</p>
+                <input class="registration__input" type="text" name="name" placeholder="Your name"
+                    pattern="[a-zA-Zа-яА-ЯІіЇї]+" required>
+                <input class="registration__input" type="tel" name="phone" placeholder="Phone number" pattern="[0-9]+"
+                    required minlength="10">
+                <input class="registration__input" type="email" name="mail" placeholder="Email">
+            </form>
+            <button class="btn-registration" type="button">Register</button>
+        </div>
     </div>
-</footer>
+</section>
+
