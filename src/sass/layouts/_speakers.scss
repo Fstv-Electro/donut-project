@@ -1,0 +1,31 @@
+.speakers {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.speakers__title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.speakers__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.speakers__menu-item {
+    width: 130px;
+    text-align: center;
+}
+.speakers__menu-img {
+    margin-bottom: 12px;
+}
+.speakers__menu-text-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.speakers__menu-text {
+    font-weight: 500;
+    font-size: 12px;
+    
+}
