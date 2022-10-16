@@ -384,10 +384,45 @@ body {
   pointer-events: none;
 }
 
+.page-header {
+  margin-top: 16px;
+}
+
+.container--centering-ph {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   display: inline-flex;
   width: 108px;
   height: 50px;
+}
+
+.donat-nav__list {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .donat-nav__list {
+    display: none;
+  }
+}
+
+.open-mobile-menu {
+  display: inline-flex;
+  width: 40px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1199px) {
+  .open-mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-close__icon {
+  fill: currentColor;
 }
 
 .about {
