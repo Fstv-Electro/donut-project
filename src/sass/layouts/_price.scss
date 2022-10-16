@@ -51,7 +51,16 @@
 }
 
 .price__item-category{
+    position: relative;
     margin-bottom: 12px;
+}
+
+.price__item-category:before {
+    content: url('/src/images/list-icon.jpg');
+    position: absolute;
+    left: -35px;
+    width: 24px;
+    height: 24px;
 }
 
 .price__link-box {
