@@ -1,0 +1,56 @@
+.section__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.bgi-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 8px 32px 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 394px;
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-mobJPG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    border-radius: 10px;
+}
+
+.bgi-container_image {
+    display: none;
+}
+.bgi-container__item:not(:last-child) {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+} 
+.bgi-container__description {
+    width: 144px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--second-text-color);
+}
+.registration {
+    margin-bottom: 34px;
+}
+.registration__post {
+    font-size: 16px;
+    color: var(--second-text-color);
+    margin-bottom: 20px;
+}
+.registration__input {
+    width: 100%;
+    color: var(--second-text-color);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+
+    &::placeholder {
+        color: var(--second-text-color);
+    }
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

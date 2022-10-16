@@ -56,7 +56,15 @@ body {
     text-align: center;
     margin-bottom: 27px;
 }
-
+.button {
+    min-width: 140px;
+    height: 40px;
+    color: var(--second-text-color);
+    background: var(--accent-color);
+    border-color: transparent;
+    border-radius: 25px;
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+}
 .container {
     padding-left: 20px;
     padding-right: 20px;
