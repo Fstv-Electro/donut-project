@@ -1,0 +1,21 @@
+.reviews {
+    padding-bottom: 40px;
+}
+
+.reviews__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.reviews__menu-item {
+    background-image: url(../images/program1-desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
