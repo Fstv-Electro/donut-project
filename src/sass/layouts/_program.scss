@@ -40,6 +40,16 @@
     &:not(:last-child){
         margin-bottom: 10px;
     }
+
+    &::before {
+        content: '';
+        background-image: url('/src/images/list.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
 }
 
 .program__menu-icon {
@@ -121,10 +131,3 @@
     position: absolute;
     top: 87;
 }
-
-
-
-
-
-
-
