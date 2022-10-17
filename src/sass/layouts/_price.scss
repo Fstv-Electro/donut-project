@@ -10,18 +10,40 @@
 }
 
 .price__item {
-    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
-    border-radius: 25px 25px 25px 25px;
-    background-color: #fafbfb;
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     padding-top: 16px;
     padding-bottom: 24px;
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    border-radius: 25px 25px 25px 25px;
+    background-color: #fafbfb;
 
     @media screen and (min-width: 480px){
         width: 280px;
+    }
+}
+
+.price__item:not(:first-child) {
+    background-image: url('/src/images/price-mob.png');
+    background-repeat: no-repeat;
+    background-position: center 70%;
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('/src/images/price-desk.png');
+    }
+}
+
+.price__item:first-child {
+    @media screen and (min-width: 768px) {
+        background-image: url('/src/images/price-mob-full.png');
+        background-repeat: no-repeat;
+        background-position: center 70%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('/src/images/price-desk.png');
     }
 }
 
