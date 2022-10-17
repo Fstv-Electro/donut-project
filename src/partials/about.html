@@ -1,7 +1,8 @@
 <section class="about">
-  <div class="container">
+  <div class="container container__about">
+    <div class="about__thumb">
     <picture class="about__picture">
-      <!-- <source
+      <source
         srcset="
           ./images/about-desk.jpg    1x,
           ./images/about-desk@2x.jpg 2x,
@@ -23,14 +24,15 @@
           ./images/about-mob@2x.jpg 2x,
           ./images/about-mob@3x.jpg 3x
         "
-        media="(min-width: 480px)"
-      /> -->
+        media="(max-width: 767px)"
+      />
       <img
         class="about__img"
         src="./images/about-mob.jpg"
         alt="donuts and hand"
       />
     </picture>
+    </div>
     <div class="about__info">
       <h2 class="about__title title">About us</h2>
       <p class="about__description">
@@ -48,9 +50,9 @@
         eyes! We love what we do and believe you will enjoy our cooking
         atmosphere!
       </p>
+      <button onclick="readMoreFunc()" class="about__btn" id="myBtn">
+        Read more
+      </button>
     </div>
-    <button onclick="readMoreFunc()" class="about__btn" id="myBtn">
-      Read more
-    </button>
   </div>
 </section>
