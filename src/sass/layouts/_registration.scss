@@ -21,29 +21,79 @@
         background-image: linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-mobJPG@2x.jpg);
     }
 }
-
+@media screen and (min-width: 768px) {
+    .bgi-container {
+        position: relative;
+        display: flex;
+        max-width: 704px;
+        align-items: center;
+        padding: 40px 40px 32px 62px;
+        background-image: url(/src/images/Rectangle-tab.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-tab.png);   
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+ .bgi-container {
+    background-image: url(/src/images/Rectangle-tab@2x.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-tab@2x.png);
+  }
+}
 .bgi-container_image {
     display: none;
 }
-.bgi-container__item:not(:last-child) {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #FFFFFF;
-} 
+@media screen and (min-width: 768px) {
+    .bgi-container_image {
+        position: absolute;
+        left: 23px;
+        bottom: 20px;
+        display: inline-flex;
+        width: 100px;
+        height: 66px;
+    }
+}
+
 .bgi-container__description {
-    width: 144px;
     font-weight: 500;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
     color: var(--second-text-color);
+
+}
+@media screen and (min-width: 768px) {
+    .bgi-container__description {
+    font-size: 18px;
+    margin: 0;
+    margin-right: 32px;
+    padding: 0;
+    border-bottom: none;
+    width: 90px;
+    text-align: end;
+    color: var(--main-text-color);
+    }
 }
 .registration {
     margin-bottom: 34px;
+}
+@media screen and (min-width: 768px) {
+    .registration {
+    width: 230px;
+    padding-left: 24px;
+    border-left: 1px solid #00000080;
+    text-align: start;
+    margin-right: 74px;
+
+    }
 }
 .registration__post {
     font-size: 16px;
     color: var(--second-text-color);
     margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+    .registration__post {
+        color: var(--main-text-color);
+    }
 }
 .registration__input {
     width: 100%;
@@ -59,3 +109,18 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (min-width: 768px) {
+    .registration__input {
+        color: var(--main-text-color);
+        border-bottom: 1px solid #000000;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
