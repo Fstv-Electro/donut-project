@@ -4,32 +4,50 @@
     padding-bottom: 20px;
 }
 
+.program__flex-container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .program__title {
+
     font-family: var(--title-font);
     font-weight: 500;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.21;
     text-align: center;
     color: var(--main-text-color);
 
     margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+        margin-bottom: 28px;
+        font-size: 32px;
+        line-height: 1.22;
+    }
 }
 
 .program__text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     color: var(--main-text-color);
 
     margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+    }
 }
 
 .program__menu {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     color: var(--main-text-color);
-    margin-bottom: 16px;
 }
 
 .program__menu-item {
@@ -73,7 +91,11 @@
 }
 
 .program__info {
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
+
+    @media screen and (min-width: 768px){
+        width: 329px;
+    }
 }
 
 .program__text--full {
@@ -99,8 +121,17 @@
     row-gap: 28px;
     column-gap: 20px;
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+
+
+    @media screen and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 383px;
+    }
 }
 
 .program__img-item {
@@ -110,14 +141,27 @@
 
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        max-width: 152px;
+        max-height: 152px;
+    }
 }
 
 .program__img-item:nth-child(2) {
     transform: translateY(20px);
+
+    @media screen and (min-width: 768px) {
+        transform: translateY(0);
+    }
 }
 
 .program__img-item:nth-child(4) {
     transform: translateY(20px);
+
+    @media screen and (min-width: 768px) {
+        transform: translateY(40px);
+    }
 }
 
 .program__img-pictures {
