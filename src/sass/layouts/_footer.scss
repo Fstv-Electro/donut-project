@@ -5,6 +5,10 @@
     column-gap: 16px;
     justify-content: center;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
 }
 
 .contact__social-link {
@@ -42,13 +46,27 @@
     font-size: 16px;
     line-height: 1.25;
     color: #2e2520;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+    }
 }
 
+
+.page-footer__svg {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
 // DONUTS
 
 .page-footer .container {
     position: relative;
     padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 80px;
+    }
 }
 
 .page-footer__list:after {
