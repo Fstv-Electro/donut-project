@@ -60,23 +60,30 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
+    // text-align: center;
     color: var(--main-text-color);
     background-color: transparent;
 
     padding: 0;
-    border: none;
+    border: inherit;
     margin-bottom: 24px;
 
-    width: 90px;
-    height: 20px;
+    // width: 90px;
+    // height: 20px;
 }
 
-.program__text {
+.program__info {
+    margin-bottom: 8px;
+}
 
+.program__text--full {
     @media screen and (max-width:1200px){
     display: none;
     }    
+}
+
+#more {
+    display: none;
 }
 
 .program__img {
