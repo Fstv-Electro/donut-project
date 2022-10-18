@@ -1,0 +1,64 @@
+// SOCIAL LIST
+
+.contact__social-list {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact__social-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.contact__social-link:hover,
+.contact__social-link:focus {
+    background-color: var(--main-text-color);
+    fill: var(--accent-color);
+}
+
+.constact__svg:hover,
+.constact__svg:focus {
+    fill: var(--accent-color);
+}
+
+// ADDRESS
+
+.page-footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+
+}
+
+.page-footer__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2e2520;
+}
+
+// DONUTS
+
+.page-footer .container {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.page-footer__list:after {
+    position: absolute;
+    content: url('/src/images/пончикиPNG@2x.png');
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

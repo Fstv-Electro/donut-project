@@ -74,25 +74,3 @@
     background-color: var(--accent-color);
     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
 }
-.contact__social-list {
-    display: flex;
-    column-gap: 16px;
-    justify-content: center;
-}
-
-.contact__social-link {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-}
-.contact__social-link:hover,
-.contact__social-link:focus {
-    background-color: var(--main-text-color);
-    fill: var(--accent-color);
-}
-.constact__svg:hover,
-.constact__svg:focus {
-    fill: var(--accent-color);
-}
