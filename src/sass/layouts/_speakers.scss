@@ -1,12 +1,6 @@
 .speakers {
     padding-top: 35px;
 }
-@media screen and (min-width: 768px) {
-    .speakers {
-        padding-top: 44px;
-        padding-bottom: 77px;
-    }
-}
 .speakers__title {
     font-weight: 500;
     font-size: 24px;
@@ -15,62 +9,28 @@
     text-align: center;
     margin-bottom: 16px;
 }
-@media screen and (min-width: 768px) {
-    .speakers__title {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-}
 .speakers__menu {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    // width: 280px;
+    width: 280px;
     margin-right: auto;
     margin-left: auto;
 }
-@media screen and (min-width: 768px) {
-    .speakers__menu {
-        flex-wrap: nowrap;
-        gap: 32px;
-    }
-}
 .speakers__menu-item {
-    flex-basis: calc((100% - 20px) / 2);
+    width: 130px;
     text-align: center;
-}
-@media screen and (min-width: 768px) {
-    .speakers__menu-item {
-        flex-basis: calc((100% - 96px) / 4);
-        text-align: center;
-    }
 }
 .speakers__menu-img {
     margin-bottom: 12px;
-}
-@media screen and (min-width: 768px) {
-    .speakers__menu-img {
-        margin-bottom: 20px;
-    }
 }
 .speakers__menu-text-name {
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 12px;
 }
-@media screen and (min-width: 768px) {
-    .speakers__menu-text-name {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-}
 .speakers__menu-text {
     font-weight: 500;
     font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-    .speakers__menu-text {
-        font-size: 14px;
-    }
 }
