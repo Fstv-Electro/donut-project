@@ -1,2 +1,0 @@
-var create_image,image_array=["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"],new_image_array=[];function getNumberImage(){for(var a=Math.floor(Math.random(1,5));a>0;){a-=1}var r=!0,e=!1,n=void 0;try{for(var t,g=new_image_array[Symbol.iterator]();!(r=(t=g.next()).done);r=!0){var o=t.value;create_image=document.getElementsByClassName("section").background="".concat(o)}}catch(a){e=!0,n=a}finally{try{r||null==g.return||g.return()}finally{if(e)throw n}}return create_image}
-//# sourceMappingURL=index.bf32c34d.js.map
