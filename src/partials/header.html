@@ -5,30 +5,21 @@
       <nav class="donat-nav">
         <a href="./index.html" class="logo">
           <picture>
-            <source
-              srcset="
+            <source srcset="
                 ./images/logo-desk.png    1x,
                 ./images/logo-desk@2x.png 2x,
                 ./images/logo-desk@3x.png 3x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
+              " media="(min-width: 1200px)" />
+            <source srcset="
                 ./images/logo-tab.png    1x,
                 ./images/logo-tab@2x.png 2x,
                 ./images/logo-tab@3x.png 3x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
+              " media="(min-width: 768px)" />
+            <source srcset="
                 ./images/logo-mob.png    1x,
                 ./images/logo-mob@2x.png 2x,
                 ./images/logo-mob@3x.png 3x
-              "
-              media="(max-width: 767px)"
-            />
+              " media="(max-width: 767px)" />
             <img src="./images/logo-mob.png" alt="Logo" />
           </picture>
         </a>
@@ -52,12 +43,9 @@
             <a href="" class="donat-nav__list__link">Contacts</a>
           </li>
         </ul>
-        <button class="open-mobile-menu" type="button">
+        <button class="open-mobile-menu" type="button" data-menu-open>
           <svg width="30px" height="16px">
-            <use
-              href="./images/sprite-icons.svg#menu"
-              class="mobile-menu-icon"
-            ></use>
+            <use href="./images/sprite-icons.svg#menu" class="mobile-menu-icon"></use>
           </svg>
         </button>
       </nav>
@@ -69,30 +57,21 @@
       <li class="hero-sectio__social__item">
         <a href="https://twitter.com/?lang=uk" target="_blank">
           <svg width="16px" height="16px" class="social-icon--color">
-            <use
-              href="./images/sprite-icons.svg#twitter"
-              class="hero-sectio__social__icon"
-            ></use>
+            <use href="./images/sprite-icons.svg#twitter" class="hero-sectio__social__icon"></use>
           </svg>
         </a>
       </li>
       <li class="hero-sectio__social__item">
         <a href="https://www.instagram.com/" target="_blank">
           <svg width="16px" height="16px" class="social-icon--color">
-            <use
-              href="./images/sprite-icons.svg#instagram"
-              class="hero-sectio__social__icon"
-            ></use>
+            <use href="./images/sprite-icons.svg#instagram" class="hero-sectio__social__icon"></use>
           </svg>
         </a>
       </li>
       <li class="hero-sectio__social__item">
         <a href="https://www.facebook.com" target="_blank">
           <svg width="16px" height="16px" class="social-icon--color">
-            <use
-              href="./images/sprite-icons.svg#facebook"
-              class="hero-sectio__social__icon"
-            ></use>
+            <use href="./images/sprite-icons.svg#facebook" class="hero-sectio__social__icon"></use>
           </svg>
         </a>
       </li>
@@ -100,31 +79,23 @@
   </div>
 </section>
 
-<div class="mobile-menu">
+<div class="mobile-menu" data-menu>
   <a href="" class="logo logo-mobile">
     <picture>
-      <source
-        srcset="
+      <source srcset="
           ./images/logo-tab.png    1x,
           ./images/logo-tab@2x.png 2x,
           ./images/logo-tab@3x.png 3x
-        "
-        media="(min-width: 768px)"
-        type="image/png"
-      />
-      <source
-        srcset="
+        " media="(min-width: 768px)" type="image/png" />
+      <source srcset="
           ./images/logo-mob.png    1x,
           ./images/logo-mob@2x.png 2x,
           ./images/logo-mob@3x.png 3x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
+        " media="(max-width: 767px)" type="image/png" />
       <img src="./images/logo-mob.png" alt="Logo" />
     </picture>
   </a>
-  <button class="mobile-menu-close" type="button">
+  <button class="mobile-menu-close" type="button" data-menu-close>
     <svg width="20px" height="20px">
       <use href="./images/sprite-icons.svg#menu-close"></use>
     </svg>
@@ -150,3 +121,4 @@
     </li>
   </ul>
 </div>
+<script src="./mobile-menu.js"></script>
