@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 28px;
+    }
 }
 
 .logo {
@@ -59,6 +63,8 @@
 
     @media screen and(min-width: 768px) {
         background-image: url(../images/hero-tab@3x.jpg);
+        text-align: unset;
+        padding-bottom: 43px;
     }
 
     @media screen and(min-width: 1200px) {
@@ -73,10 +79,15 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 1.21;
-    text-align: center;
     letter-spacing: -0.03em;
 
     color: var(--main-text-color);
+    @media screen and(min-width: 768px){
+        width: 319px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 1.23;
+    }
 }
 
 .hero-sectio__host {
@@ -87,6 +98,10 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--main-font);
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 24px;
+    }
 }
 
 .hero-sectio__button {
@@ -106,6 +121,10 @@
     background: var(--accent-color);
     box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
     border-radius: 25px;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 .hero-sectio__social {
@@ -114,6 +133,10 @@
     align-items: center;
     column-gap: 16px;
     list-style: none;
+    
+    @media screen and(min-width: 768px){
+        justify-content: start;
+    }
 }
 
 .social-icon--color {
@@ -136,7 +159,11 @@
     width: 100%;
     height: 100%;
     background-color: #E5E2E3;
-    display: none;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+.mobile-menu .is-open{
+    transform: translateX(0);
 }
 
 .logo-mobile {

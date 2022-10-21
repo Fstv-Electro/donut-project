@@ -52,7 +52,7 @@
             <a href="" class="donat-nav__list__link">Contacts</a>
           </li>
         </ul>
-        <button class="open-mobile-menu" type="button">
+        <button class="open-mobile-menu" type="button" data-menu-open>
           <svg width="30px" height="16px">
             <use
               href="./images/sprite-icons.svg#menu"
@@ -100,7 +100,7 @@
   </div>
 </section>
 
-<div class="mobile-menu">
+<div class="mobile-menu" data-menu is-open>
   <a href="" class="logo logo-mobile">
     <picture>
       <source
@@ -124,7 +124,7 @@
       <img src="./images/logo-mob.png" alt="Logo" />
     </picture>
   </a>
-  <button class="mobile-menu-close" type="button">
+  <button class="mobile-menu-close" type="button" data-menu-close>
     <svg width="20px" height="20px">
       <use href="./images/sprite-icons.svg#menu-close"></use>
     </svg>
@@ -150,3 +150,4 @@
     </li>
   </ul>
 </div>
+<script src="./mobile-menu.js"></script>
