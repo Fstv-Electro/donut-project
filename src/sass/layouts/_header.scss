@@ -106,6 +106,8 @@
 }
 
 .hero-sectio__title {
+    display: inline-block;
+    width: 280px;
     margin-bottom: 18px;
     font-family: var(--main-font);
     font-style: normal;
