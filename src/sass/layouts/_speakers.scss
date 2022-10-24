@@ -7,6 +7,12 @@
         padding-bottom: 75px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .speakers {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 .speakers__title {
     font-weight: 500;
     font-size: 24px;
@@ -19,6 +25,11 @@
     .speakers__title {
         font-size: 32px;
         margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .speakers__title {
+        margin-bottom: 5px;
     }
 }
 .speakers__menu {
@@ -72,5 +83,13 @@
 @media screen and (min-width: 768px) {
     .speakers__menu-text {
         font-size: 14px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .speakers__menu-text {
+        font-size: 16px;
+        width: 181px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
