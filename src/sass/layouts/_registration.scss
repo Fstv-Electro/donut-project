@@ -1,7 +1,21 @@
+.section-registration {
+    padding-top: 80px;
+}
+@media screen and (min-width: 1200px) {
+    .section-registration {
+        padding-top: 100px;
+    } 
+}
 .section__title {
     font-weight: 600;
     font-size: 24px;
     text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .section__title {
+        font-weight: 500;
+        font-size: 32px;
+    }
 }
 .bgi-container {
     margin-left: auto;
@@ -25,10 +39,11 @@
     .bgi-container {
         position: relative;
         display: flex;
-        min-width: 700px;
+        max-width: 700px;
         align-items: center;
         padding: 40px 40px 32px 62px;
         background-image: url(/src/images/Rectangle-tab.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-tab.png);   
+        background-size: cover;
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -36,6 +51,20 @@
     background-image: url(/src/images/Rectangle-tab@2x.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-tab@2x.png);
   }
 }
+@media screen and (min-width: 1200px) {
+    .bgi-container {
+        max-width: 1025px;
+        justify-content: center;
+        padding-left: 213px;
+        padding-right: 213px;
+        background-image: url(/src/images/Rectangle-desk.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-desk.png);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .bgi-container {
+       background-image: url(/src/images/Rectangle-desk@2x.png), linear-gradient(to right, rgba(61, 44, 44, 0.45), rgba(61, 44, 44, 0.45)), url(/src/images/registration2-desk@2x.png);
+     }
+   }
 .bgi-container_image {
     display: none;
 }
@@ -49,7 +78,16 @@
         height: 66px;
     }
 }
-
+@media screen and (min-width: 1200px) {
+    .bgi-container_image {
+        position: absolute;
+        left: 15px;
+        bottom: 16px;
+        display: inline-flex;
+        width: 200px;
+        height: 133px;
+    }
+}
 .bgi-container__description {
     font-weight: 500;
     margin-left: auto;
@@ -72,6 +110,14 @@
     color: var(--main-text-color);
     }
 }
+@media screen and (min-width: 1200px) {
+    .bgi-container__description {
+    font-size: 20px;
+    margin-right: 28px;
+    width: 127px;
+    
+    }
+}
 .registration {
     margin-bottom: 34px;
 }
@@ -82,7 +128,15 @@
     border-left: 1px solid #00000080;
     text-align: start;
     margin-right: 74px;
-
+    margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .registration {
+    width: 267px;
+    padding-left: 28px;
+    margin-right: 23px;
+    margin-bottom: 0;
     }
 }
 .registration__post {
@@ -93,6 +147,13 @@
 @media screen and (min-width: 768px) {
     .registration__post {
         color: var(--main-text-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .registration__post {
+        width: 267px;
+        font-size: 20px;
+        margin-bottom: 24px;
     }
 }
 .registration__input {
@@ -119,6 +180,17 @@
         }
         &:not(:last-child) {
             margin-bottom: 16px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .registration__input {
+        max-width: 230px;
+        color: var(--main-text-color);
+        border-bottom: 1px solid #000000;
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
         }
     }
 }
